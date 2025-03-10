@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="mul">
+<head>
+    <meta charset="UTF-8">
+    <title>Multilingual Disease Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>रोग भविष्यवाणी / Disease Prediction / रोग अंदाज</h1>
+        <span><button class="theme-toggle" onclick="toggleTheme()">
+            <span id="themeIcon">🌙</span>
+          </button></span>
+        
+        <div class="input-section">
+            <textarea id="symptomsInput" 
+                      placeholder="Enter symptoms separated by commas (in any language)..."></textarea>
+            <button onclick="predictDisease()">Predict Disease</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="diseases.json"></script>
+</body>
+</html>
